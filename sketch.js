@@ -14,7 +14,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   
   //creating background
   scene = createSprite(0,0,400,400);
@@ -96,7 +96,7 @@ function draw() {
     arrowGroup.destroyEach();
     score=score+1;
   }
-
+  this.windowResized
   drawSprites();
   text("Score: "+ score, 300,50);
 }
