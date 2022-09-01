@@ -96,7 +96,7 @@ function draw() {
     arrowGroup.destroyEach();
     score=score+1;
   }
-  this.windowResized
+  this.windowResized():
   drawSprites();
   text("Score: "+ score, 300,50);
 }
